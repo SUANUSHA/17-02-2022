@@ -1,0 +1,17 @@
+Ex 1:
+include<stdio.h>
+int main()
+{
+  int arr[4];
+  arr[3] = 10;
+  return 0;
+}
+
+Ex 2:
+#include <stdio.h>
+int main()
+{
+  float *p;
+  printf("%f",*p);
+  return 0;
+}
