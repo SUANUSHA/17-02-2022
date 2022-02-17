@@ -1,0 +1,29 @@
+Using Pragma pack
+#include <stdio.h>
+#pragma pack(1)
+struct padding
+{
+  short int s;	
+  int i;
+  char c;
+};
+int main()
+{
+	struct padding s;
+	printf("Size of s is: %ld\n", sizeof(s));
+}
+
+Using Attribute:
+#include <stdio.h>
+struct s 
+{
+  char ch;
+  float f;
+  char c;
+  short int s;
+} __attribute__((packed));
+int main()
+{
+	struct s pack;
+	printf("Size of pack is: %ld\n", sizeof(pack));
+}
